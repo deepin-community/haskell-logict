@@ -1,0 +1,59 @@
+Source: haskell-logict
+Maintainer: Debian Haskell Group <pkg-haskell-maintainers@lists.alioth.debian.org>
+Uploaders: Clint Adams <clint@debian.org>
+Priority: optional
+Section: haskell
+Rules-Requires-Root: no
+Build-Depends:
+ cdbs,
+ debhelper (>= 10),
+ ghc (>= 8.4.3),
+ ghc-prof,
+ haskell-devscripts (>= 0.13),
+Build-Depends-Indep: ghc-doc
+Standards-Version: 4.1.4
+Homepage: https://github.com/Bodigrim/logict#readme
+Vcs-Browser: https://salsa.debian.org/haskell-team/DHG_packages/tree/master/p/haskell-logict
+Vcs-Git: https://salsa.debian.org/haskell-team/DHG_packages.git [p/haskell-logict]
+
+Package: libghc-logict-dev
+Architecture: any
+Depends: ${haskell:Depends}, ${misc:Depends}, ${shlibs:Depends}
+Recommends: ${haskell:Recommends}
+Suggests: ${haskell:Suggests}
+Provides: ${haskell:Provides}
+Description: Backtracking logic-programming monad${haskell:ShortBlurb}
+ It is a continuation-based, backtracking, logic programming monad. An
+ adaptation of the two-continuation implementation found in the paper
+ Backtracking, Interleaving, and Terminating Monad Transformers available
+ here: http://okmij.org/ftp/papers/LogicT.pdf
+ .
+ ${haskell:Blurb}
+
+Package: libghc-logict-prof
+Architecture: any
+Depends: ${haskell:Depends}, ${misc:Depends}
+Recommends: ${haskell:Recommends}
+Suggests: ${haskell:Suggests}
+Provides: ${haskell:Provides}
+Description: Backtracking logic-programming monad${haskell:ShortBlurb}
+ It is a continuation-based, backtracking, logic programming monad. An
+ adaptation of the two-continuation implementation found in the paper
+ Backtracking, Interleaving, and Terminating Monad Transformers available
+ here: http://okmij.org/ftp/papers/LogicT.pdf
+ .
+ ${haskell:Blurb}
+
+Package: libghc-logict-doc
+Architecture: all
+Section: doc
+Depends: ${haskell:Depends}, ${misc:Depends}
+Recommends: ${haskell:Recommends}
+Suggests: ${haskell:Suggests}
+Description: Backtracking logic-programming monad${haskell:ShortBlurb}
+ It is a continuation-based, backtracking, logic programming monad. An
+ adaptation of the two-continuation implementation found in the paper
+ Backtracking, Interleaving, and Terminating Monad Transformers available
+ here: http://okmij.org/ftp/papers/LogicT.pdf
+ .
+ ${haskell:Blurb}
